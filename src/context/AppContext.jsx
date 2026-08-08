@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { COURSES } from '../data/mockData';
 
-const AppContext = createContext();
+export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   // Page Routing state: 'home' | 'category' | 'my-learning' | 'teach' | 'business' | 'checkout'
@@ -10,7 +10,7 @@ export const AppProvider = ({ children }) => {
   // Cart state
   const [cart, setCart] = useState(() => {
     const saved = localStorage.getItem('redemy_cart');
-    return saved ? JSON.parse(saved) : [COURSES[0]]; // Default 1 course in cart for demo
+    return saved ? JSON.parse(saved) : [COURSES[0]];
   });
 
   // Wishlist state
@@ -19,7 +19,7 @@ export const AppProvider = ({ children }) => {
     return saved ? JSON.parse(saved) : [COURSES[1]];
   });
 
-  // Enrolled courses state (with progress percentage tracking!)
+  // Enrolled courses state
   const [enrolledCourses, setEnrolledCourses] = useState(() => {
     const saved = localStorage.getItem('redemy_enrolled');
     return saved ? JSON.parse(saved) : [
@@ -32,9 +32,9 @@ export const AppProvider = ({ children }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedTopic, setSelectedTopic] = useState('All');
-  const [selectedRating, setSelectedRating] = useState('0'); // '4.5', '4.0', '3.5', '0'
+  const [selectedRating, setSelectedRating] = useState('0');
   const [selectedLevel, setSelectedLevel] = useState('All');
-  const [sortBy, setSortBy] = useState('popular'); // 'popular' | 'rating' | 'newest' | 'price-low' | 'price-high'
+  const [sortBy, setSortBy] = useState('popular');
 
   // Modals & Drawers
   const [isCartOpen, setIsCartOpen] = useState(false);
