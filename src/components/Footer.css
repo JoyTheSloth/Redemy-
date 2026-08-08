@@ -1,0 +1,86 @@
+/* Footer CSS */
+.footer {
+  background: #111827;
+  color: #FFFFFF;
+  padding: 50px 0 30px 0;
+  border-top: 4px solid var(--primary-red);
+}
+
+.footer-top-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #1F2937;
+  margin-bottom: 36px;
+}
+
+.footer-top-text h3 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.footer-top-text p {
+  font-size: 14px;
+  color: #9CA3AF;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 200px;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-col h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #FFFFFF;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col li a {
+  font-size: 13px;
+  color: #9CA3AF;
+  transition: color 0.2s ease;
+}
+
+.footer-col li a:hover {
+  color: var(--primary-red);
+}
+
+.lang-btn {
+  border: 1px solid #374151;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: #1F2937;
+  border-color: var(--primary-red);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid #1F2937;
+  font-size: 12px;
+  color: #9CA3AF;
+}

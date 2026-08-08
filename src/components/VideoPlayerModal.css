@@ -1,0 +1,147 @@
+/* Interactive LMS Video Player CSS */
+.lms-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: #0B0F17;
+  z-index: 2500;
+  display: flex;
+  flex-direction: column;
+}
+
+.lms-top-bar {
+  height: 60px;
+  background: #111827;
+  border-bottom: 1px solid #1F2937;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  color: white;
+}
+
+.lms-title {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lms-progress-pill {
+  background: rgba(229, 9, 20, 0.2);
+  color: var(--primary-red);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--primary-red-border);
+}
+
+.lms-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.lms-video-column {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  overflow-y: auto;
+}
+
+.lms-screen-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lms-screen-placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.lms-play-overlay-button {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  background: var(--primary-red);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(229, 9, 20, 0.7);
+  transition: transform 0.2s ease;
+}
+
+.lms-play-overlay-button:hover {
+  transform: scale(1.1);
+}
+
+.lms-controls-bar {
+  background: #111827;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  border-top: 1px solid #1F2937;
+}
+
+.lms-sidebar-column {
+  background: #111827;
+  border-left: 1px solid #1F2937;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.lms-sidebar-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #1F2937;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+}
+
+.lms-lesson-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #1F2937;
+  font-size: 13px;
+  color: #D1D5DB;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.lms-lesson-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.lms-lesson-row.active {
+  background: rgba(229, 9, 20, 0.15);
+  border-left: 4px solid var(--primary-red);
+  color: white;
+}
+
+.certificate-preview-box {
+  background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
+  border: 2px dashed var(--primary-red);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}

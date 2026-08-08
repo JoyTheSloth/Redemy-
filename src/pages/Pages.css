@@ -1,0 +1,168 @@
+/* Pages CSS - Category, Dashboard, Teach, Business, Checkout */
+
+/* Category Explorer Page */
+.category-page-container {
+  padding: 40px 0 60px 0;
+}
+
+.category-breadcrumb {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.category-page-header h1 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.category-page-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 36px;
+  margin-top: 30px;
+}
+
+.filter-sidebar {
+  background: var(--bg-main);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 20px;
+  height: fit-content;
+}
+
+.filter-group {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.filter-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.filter-group h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-main);
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.filter-option input[type="checkbox"],
+.filter-option input[type="radio"] {
+  accent-color: var(--primary-red);
+}
+
+/* My Learning Dashboard */
+.mylearning-header {
+  background: #111827;
+  color: white;
+  padding: 40px 0 0 0;
+}
+
+.mylearning-title {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.mylearning-tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #1F2937;
+}
+
+.mylearning-tab-btn {
+  color: #9CA3AF;
+  font-weight: 700;
+  font-size: 15px;
+  padding-bottom: 14px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.mylearning-tab-btn.active {
+  color: #FFFFFF;
+  border-bottom-color: var(--primary-red);
+}
+
+.mylearning-card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar-track {
+  width: 100%;
+  height: 6px;
+  background: #E5E7EB;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--primary-red);
+  transition: width 0.3s ease;
+}
+
+/* Teach Page & Business Page */
+.page-hero-banner {
+  background: linear-gradient(135deg, #FFF0F1 0%, #FFFFFF 50%, #FEE2E2 100%);
+  padding: 60px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.pricing-table th, .pricing-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pricing-table th {
+  background: var(--bg-alt);
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+/* Checkout Page */
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 36px;
+  padding: 40px 0;
+}
